@@ -1,0 +1,76 @@
+body {
+    perspective: 1000px;
+}
+
+#box {
+    position: relative;
+    height: 200px;
+    width: 100px;
+    margin: 100px auto;
+    transform-style: preserve-3d;
+    animation: myrotate 10s linear infinite;
+    /* 关键桢 匀速转10s 无限循环 */
+}
+
+@keyframes myrotate {
+    form {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 200px;
+}
+
+.item img {
+    width: 100px;
+    height: 200px;
+}
+
+.item01 {
+    transform: translateZ(300px);
+}
+
+.item02 {
+    transform: rotateY(36deg) translateZ(300px);
+}
+
+.item03 {
+    transform: rotateY(72deg) translateZ(300px);
+}
+
+.item04 {
+    transform: rotateY(108deg) translateZ(300px);
+}
+
+.item05 {
+    transform: rotateY(144deg) translateZ(300px);
+}
+
+.item06 {
+    transform: rotateY(180deg) translateZ(300px);
+}
+
+.item07 {
+    transform: rotateY(216deg) translateZ(300px);
+}
+
+.item08 {
+    transform: rotateY(252deg) translateZ(300px);
+}
+
+.item09 {
+    transform: rotateY(288deg) translateZ(300px);
+}
+
+.item10 {
+    transform: rotateY(324deg) translateZ(300px);
+}
